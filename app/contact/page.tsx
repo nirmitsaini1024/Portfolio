@@ -2,24 +2,22 @@
 import { useState } from "react";
 
 export default function ContactMe() {
-  // This is the state to manage if the email is copied
   const [copied, setCopied] = useState(false);
 
-  // This function handles copying the email to the clipboard
   const copyToClipboard = () => {
-    navigator.clipboard.writeText("nirmitsaini24@gmail.com"); // Copy the email text
-    setCopied(true); // Set the copied state to true
-    setTimeout(() => setCopied(false), 2000); // Reset the copied state after 2 seconds
+    navigator.clipboard.writeText("nirmitsaini24@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
     <>
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full px-4">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Links
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4 hidden md:block">
-          Links to all my socials, projects, source codes and memes.
+          Links to all my socials, projects, source codes, and memes.
         </p>
 
         <div className="flex items-center justify-between w-full mb-4">
@@ -51,17 +49,15 @@ export default function ContactMe() {
           </button>
         </div>
 
-
         <a
           href="https://twitter.com/nirmit_saini"
           target="__blank"
-          className="dark:hover:bg-zinc-800 dark:border-zinc-800 border-2 border-gray-200 rounded-md py-2 w-full mb-4 hover:bg-gray-50 flex flex-row items-center space-x-2"
+          className="dark:hover:bg-zinc-800 dark:border-zinc-800 border-2 border-gray-200 rounded-md py-2 px-4 w-full mb-4 hover:bg-gray-50 flex flex-row items-center space-x-2"
         >
-          <span className="inline-block mr-2"></span>{" "}
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 1024 1024"
             className="h-5 w-5 text-blue-500"
             height="1em"
