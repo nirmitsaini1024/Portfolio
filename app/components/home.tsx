@@ -110,13 +110,7 @@ export default function HomeComponent() {
             <Cover> Projects</Cover>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a
-              className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
-              href="https://gomoonbeam.com"
-              aria-label="Moonbeam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
               <div className="pointer-events-none">
                 <div
                   className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
@@ -173,19 +167,32 @@ export default function HomeComponent() {
                         Uploadthing
                       </p>
                     </div>
+                    <Button variant="secondary">
+                      <a
+                        href="https://gomoonbeam.com"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Github
+                      </a>
+                    </Button>
+                    <Button variant="secondary" className="ml-2">
+                      <a
+                        href="https://admin-dashboard-nirmitsaini.vercel.app/"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
 
-
-            <a
-              className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
-              href="https://admin-dashboard-nirmitsaini.vercel.app/"
-              aria-label="Moonbeam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
               <div className="pointer-events-none">
                 <div
                   className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
@@ -226,10 +233,30 @@ export default function HomeComponent() {
                         syncfusion
                       </p>
                     </div>
+                    <Button variant="secondary">
+                      <a
+                        href="https://gomoonbeam.com"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Github
+                      </a>
+                    </Button>
+                    <Button variant="secondary" className="ml-2">
+                      <a
+                        href="https://admin-dashboard-nirmitsaini.vercel.app/"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
           <a
             type="button"
@@ -307,7 +334,10 @@ export default function HomeComponent() {
                     👨🏻‍💻 Web Developer Lead
                   </h4>
                   <p className="text-gray-500 dark:text-gray-400">
-                  To promote the importance of open source development among club members and students, encouraging contributions to meaningful projects and participation in external open source initiatives.
+                    To promote the importance of open source development among
+                    club members and students, encouraging contributions to
+                    meaningful projects and participation in external open
+                    source initiatives.
                   </p>
                 </div>
                 <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
