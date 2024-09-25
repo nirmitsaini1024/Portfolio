@@ -142,8 +142,11 @@ export default function ProjectsPage() {
                       React.js
                     </p>
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      syncfusion
+                      Syncfusion
                     </p>
+                    <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        TailwindCSS
+                      </p>
                   </div>
                   <Button variant="secondary">
                     <a
@@ -174,13 +177,7 @@ export default function ProjectsPage() {
           <Cover>Featured</Cover>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <a
-            className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
-            href="https://supernalaero-clone.netlify.app/"
-            aria-label="Moonbeam"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
             <div className="pointer-events-none">
               <div
                 className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
@@ -225,16 +222,33 @@ export default function ProjectsPage() {
                       GSAP
                     </p>
                   </div>
+                  <Button variant="secondary">
+                    <a
+                      href="https://github.com/nirmitsaini/"
+                      aria-label="Moonbeam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                  <Button variant="secondary" className="ml-2">
+                    <a
+                      href="https://supernalaero-clone.netlify.app/"
+                      aria-label="Moonbeam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
-          </a>
-          <a
+          </div>
+          <div
             className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
-            href="https://supernalaero-clone.netlify.app/"
-            aria-label="Moonbeam"
-            target="_blank"
-            rel="noopener noreferrer"
+            
           >
             <div className="pointer-events-none">
               <div
@@ -279,10 +293,30 @@ export default function ProjectsPage() {
                       Aceternity UI
                     </p>
                   </div>
+                  <Button variant="secondary">
+                      <a
+                        href=""
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Github
+                      </a>
+                    </Button>
+                    <Button variant="secondary" className="ml-2">
+                      <a
+                        href=""
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                      </a>
+                    </Button>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </main>

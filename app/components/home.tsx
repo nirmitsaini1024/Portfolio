@@ -230,7 +230,10 @@ export default function HomeComponent() {
                         React.js
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        syncfusion
+                        Syncfusion
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        TailwindCSS
                       </p>
                     </div>
                     <Button variant="secondary">
