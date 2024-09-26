@@ -55,9 +55,7 @@ export default function ProjectsPage() {
                     Setup Your Blog in Minutes
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Never write from scratch again. Kickstart your next great
-                    writing piece with Moonbeam. Your long-form writing AI
-                    assistant.
+                  Blogging platform that empowers users to create, publish, and share their own blogs with a global audience.
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -133,9 +131,7 @@ export default function ProjectsPage() {
                     Admin Dashboard
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Never write from scratch again. Kickstart your next great
-                    writing piece with Moonbeam. Your long-form writing AI
-                    assistant.
+                  Streamlined management tool that offers administrators easy access to analytics and content management, enabling efficient oversight and decision-making for website operations
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -174,7 +170,7 @@ export default function ProjectsPage() {
           </div>
         </div>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-          <Cover>Featured</Cover>
+          Featured
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
@@ -210,9 +206,7 @@ export default function ProjectsPage() {
                     Supernal.aero Clone
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Never write from scratch again. Kickstart your next great
-                    writing piece with Moonbeam. Your long-form writing AI
-                    assistant.
+                    Create a stunning website using GSAP with smooth animations and transitions.
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -224,7 +218,7 @@ export default function ProjectsPage() {
                   </div>
                   <Button variant="secondary">
                     <a
-                      href="https://github.com/nirmitsaini/"
+                      href="https://github.com/nirmitsaini1024/"
                       aria-label="Moonbeam"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -278,9 +272,7 @@ export default function ProjectsPage() {
                     Surch AI
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Never write from scratch again. Kickstart your next great
-                    writing piece with Moonbeam. Your long-form writing AI
-                    assistant.
+                    Never write from scratch again. Use Surch AI to kickstart your next great writing piece. Contributed to the project as a Frontend developer.
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">

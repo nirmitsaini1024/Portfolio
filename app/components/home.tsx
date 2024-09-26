@@ -83,10 +83,10 @@ export default function HomeComponent() {
               >
                 <div className="relative h-full w-full">
                   <Image
-                    src="/1680539787022.jpeg" // Adjust the path according to your public folder structure
+                    src="/1680539787022.jpeg"
                     alt="Profile"
-                    fill // This replaces the deprecated layout="fill"
-                    style={{ objectFit: "cover" }} // Replaces objectFit="cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                     className="transition duration-500"
                     loading="lazy"
                   />
@@ -143,9 +143,8 @@ export default function HomeComponent() {
                       Setup Your Blog in Minutes
                     </h4>
                     <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                      Never write from scratch again. Kickstart your next great
-                      writing piece with Moonbeam. Your long-form writing AI
-                      assistant.
+                      Blogging platform that empowers users to create, publish,
+                      and share their own blogs with a global audience.
                     </p>
                     <div className="pt-4 flex md:flex-row flex-wrap">
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -221,9 +220,10 @@ export default function HomeComponent() {
                       Admin Dashboard
                     </h4>
                     <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                      Never write from scratch again. Kickstart your next great
-                      writing piece with Moonbeam. Your long-form writing AI
-                      assistant.
+                      Streamlined management tool that offers administrators
+                      easy access to analytics and content management, enabling
+                      efficient oversight and decision-making for website
+                      operations.
                     </p>
                     <div className="pt-4 flex md:flex-row flex-wrap">
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -287,6 +287,80 @@ export default function HomeComponent() {
             Upcoming Projects{" "}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
+              <div className="pointer-events-none">
+                <div
+                  className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
+                  style={{
+                    maskImage:
+                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
+                  }}
+                ></div>
+                <div
+                  className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
+                  style={{
+                    maskImage:
+                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
+                  }}
+                ></div>
+              </div>
+              <div className="relative h-full">
+                <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
+                  <div className="my-4">
+                    <img src="/calenderly.png" alt="" loading="lazy" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+                      Schedulrr
+                    </h4>
+                    <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
+                      Scheduling platform designed to streamline appointment
+                      booking with ease and efficiency.
+                      {/* It offers users a seamless experience to manage their time effectively while enhancing productivity through customizable scheduling options. */}
+                    </p>
+                    <div className="pt-4 flex md:flex-row flex-wrap">
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        NextJS
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Prisma (NeonDB)
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Shadcn UI
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        TailwindCSS
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Google API
+                      </p>
+                    </div>
+                    <Button variant="secondary">
+                      <a
+                        href="https://gomoonbeam.com"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Github
+                      </a>
+                    </Button>
+                    <Button variant="secondary" className="ml-2">
+                      <a
+                        href="https://admin-dashboard-nirmitsaini.vercel.app/"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <a
               className="group mb-4 hover:shadow-lg rounded-xl transition-all duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
               href="#"
@@ -319,8 +393,8 @@ export default function HomeComponent() {
                     👨🏻‍💻 Upwork Freelancer
                   </h4>
                   <p className="text-gray-500 dark:text-gray-400">
-                    This is the paragraph you want to add below the heading. You
-                    can add more content or a description here.
+                    Worked as a Freelancer on Upwork, building web apps to gain
+                    some hands-on experience.
                   </p>
                 </div>
                 <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
@@ -337,10 +411,9 @@ export default function HomeComponent() {
                     👨🏻‍💻 Web Developer Lead
                   </h4>
                   <p className="text-gray-500 dark:text-gray-400">
-                    To promote the importance of open source development among
-                    club members and students, encouraging contributions to
-                    meaningful projects and participation in external open
-                    source initiatives.
+                    To promote the importance of Web development among club
+                    members and students, encouraging development and
+                    participation in web development projects.
                   </p>
                 </div>
                 <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
@@ -350,50 +423,6 @@ export default function HomeComponent() {
             </div>
           </div>
 
-          {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-            Tech Stacks
-          </h3>
-          <div className="relative leading-7 items-center flex-wrap text-zinc-700 dark:text-zinc-400 mb-5">
-            Some technologies I've been working with recently
-            <div className="flex space-x-5">
-              <div className="w-32 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img
-                    className="rounded-t-lg w-32 h-32"
-                    src="/87022.jpeg"
-                    alt="Small Image"
-                  />
-                </a>
-              </div>
-              <div className="w-32 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img
-                    className="rounded-t-lg w-32 h-32"
-                    src="/pngwing.com (8).png"
-                    alt="Small Image"
-                  />
-                </a>
-              </div>
-              <div className="w-32 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img
-                    className="rounded-t-lg w-32 h-32"
-                    src="/pngwing.com (7).png"
-                    alt="Small Image"
-                  />
-                </a>
-              </div>
-              <div className="w-32 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img
-                    className="rounded-t-lg w-32 h-32"
-                    src="/pngwing.com (7).png"
-                    alt="Small Image"
-                  />
-                </a>
-              </div>
-            </div>
-          </div> */}
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
             Recent Blogs
           </h3>
@@ -475,9 +504,9 @@ export default function HomeComponent() {
               </div>
               <p className="text-gray-700 dark:text-gray-400 ml-6">
                 <a href="https://algochurn.com" target="__blank">
-                  Algochurn
+                Long way to go 
                 </a>{" "}
-                crossed 300 users and I couldn't be any happier.
+                
               </p>
             </li>
           </ul>
