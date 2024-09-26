@@ -26,7 +26,7 @@ export function Footer() {
             </a>
             <a
               className="text-gray-500 hover:text-gray-600 transition"
-              href="/links"
+              href="/contact"
             >
               Links
             </a>
