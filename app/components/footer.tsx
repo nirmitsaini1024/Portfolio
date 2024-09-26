@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   return (
     <>
@@ -6,30 +8,30 @@ export function Footer() {
 
         <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-2">
           <div className="flex flex-col space-y-4">
-            <a
+            <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/blog"
             >
               Blog
-            </a>
-            <a
+            </Link>
+            <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/projects"
             >
               Projects
-            </a>
-            <a
+            </Link>
+            <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/contact"
             >
               Links
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col space-y-4">
             <a
@@ -48,14 +50,14 @@ export function Footer() {
             >
               LinkedIn
             </a>
-            <a
+            <Link
               className="text-gray-500 hover:text-gray-600 transition"
               target="_blank"
               rel="noopener noreferrer"
               href="https://x.com/nirmit_saini"
             >
               Twitter
-            </a>
+            </Link>
             <a
               className="text-gray-500 hover:text-gray-600 transition"
               href="https://www.upwork.com/freelancers/~01c913229e5fa77119?mp_source=share"
