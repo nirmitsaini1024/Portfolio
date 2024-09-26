@@ -168,7 +168,7 @@ export default function HomeComponent() {
                     </div>
                     <Button variant="secondary">
                       <a
-                        href="https://gomoonbeam.com"
+                        href="https://github.com/nirmitsaini1024/"
                         aria-label="Moonbeam"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -238,7 +238,7 @@ export default function HomeComponent() {
                     </div>
                     <Button variant="secondary">
                       <a
-                        href="https://gomoonbeam.com"
+                        href="https://github.com/nirmitsaini1024/"
                         aria-label="Moonbeam"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -339,7 +339,7 @@ export default function HomeComponent() {
                     </div>
                     <Button variant="secondary">
                       <a
-                        href="https://gomoonbeam.com"
+                        href=""
                         aria-label="Moonbeam"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -349,7 +349,7 @@ export default function HomeComponent() {
                     </Button>
                     <Button variant="secondary" className="ml-2">
                       <a
-                        href="https://admin-dashboard-nirmitsaini.vercel.app/"
+                        href=""
                         aria-label="Moonbeam"
                         target="_blank"
                         rel="noopener noreferrer"
