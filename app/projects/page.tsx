@@ -22,7 +22,7 @@ export default function ProjectsPage() {
           <Cover>Full-Stack</Cover>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
+          <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
             <div className="pointer-events-none">
               <div
                 className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
@@ -55,7 +55,9 @@ export default function ProjectsPage() {
                     Dynamic Notes
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, mollitia! Ab tempora voluptatibus ipsum asperiores?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores, mollitia! Ab tempora voluptatibus ipsum
+                    asperiores?
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -134,7 +136,8 @@ export default function ProjectsPage() {
                     Setup Your Blog in Minutes
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                  Blogging platform that empowers users to create, publish, and share their own blogs with a global audience.
+                    Blogging platform that empowers users to create, publish,
+                    and share their own blogs with a global audience.
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -210,7 +213,10 @@ export default function ProjectsPage() {
                     Admin Dashboard
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                  Streamlined management tool that offers administrators easy access to analytics and content management, enabling efficient oversight and decision-making for website operations
+                    Streamlined management tool that offers administrators easy
+                    access to analytics and content management, enabling
+                    efficient oversight and decision-making for website
+                    operations
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -220,8 +226,8 @@ export default function ProjectsPage() {
                       Syncfusion
                     </p>
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        TailwindCSS
-                      </p>
+                      TailwindCSS
+                    </p>
                   </div>
                   <Button variant="secondary">
                     <a
@@ -285,7 +291,8 @@ export default function ProjectsPage() {
                     Supernal.aero Clone
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Create a stunning website using GSAP with smooth animations and transitions.
+                    Create a stunning website using GSAP with smooth animations
+                    and transitions.
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -319,10 +326,7 @@ export default function ProjectsPage() {
               </div>
             </div>
           </div>
-          <div
-            className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
-            
-          >
+          <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
             <div className="pointer-events-none">
               <div
                 className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
@@ -351,7 +355,9 @@ export default function ProjectsPage() {
                     Surch AI
                   </h4>
                   <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Never write from scratch again. Use Surch AI to kickstart your next great writing piece. Contributed to the project as a Frontend developer.
+                    Never write from scratch again. Use Surch AI to kickstart
+                    your next great writing piece. Contributed to the project as
+                    a Frontend developer.
                   </p>
                   <div className="pt-4 flex md:flex-row flex-wrap">
                     <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
@@ -365,25 +371,25 @@ export default function ProjectsPage() {
                     </p>
                   </div>
                   <Button variant="secondary">
-                      <a
-                        href=""
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Github
-                      </a>
-                    </Button>
-                    <Button variant="secondary" className="ml-2">
-                      <a
-                        href=""
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                    </Button>
+                    <a
+                      href=""
+                      aria-label="Moonbeam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Github
+                    </a>
+                  </Button>
+                  <Button variant="secondary" className="ml-2">
+                    <a
+                      href=""
+                      aria-label="Moonbeam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
