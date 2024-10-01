@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { DownloadOutlined } from "@ant-design/icons";
 import { Footer } from "./footer";
-import IconCloud from "@/components/ui/icon-cloud";
 
 export default function HomeComponent() {
   return (
