@@ -272,7 +272,7 @@ export default function HomeComponent() {
               </div>
             </div>
 
-            <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
+            {/* <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
               <div className="pointer-events-none">
                 <div
                   className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
@@ -340,7 +340,7 @@ export default function HomeComponent() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <a
             type="button"
