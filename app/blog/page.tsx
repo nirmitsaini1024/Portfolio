@@ -20,6 +20,7 @@ export default function BlogPage() {
             <div className="flex flex-col md:flex-row justify-between">
               <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
                 Coming Soon... Stay Tuned
+                <a href="https://medium.com/@nirmitsaini24">Visit Medium</a>
               </h4>
               {/* <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
                   14,165 views
