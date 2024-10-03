@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Dynamic Notes",
+    "description": "One Step solution for your To-Do List and Notes with Dynamic UI.",
+    "technologies": [
+      "ReactJs",
+      "TailwindCSS",
+      "Framer-Motion"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/Dynamic-Draggable-notes.git",
+    "liveDemoUrl": "https://dynamicnotes.vercel.app/",
+    "image": "/screenzy-1727798876792.png"
+  },
+  {
+    "title": "Setup Your Blog in Minutes",
+    "description": "Blogging platform that empowers users to create, publish, and share their own blogs with a global audience.",
+    "technologies": [
+      "Next.js",
+      "Prisma",
+      "Zod",
+      "Shadcn ui",
+      "TailwindCSS",
+      "Uploadthing"
+    ],
+    "githubUrl": "https://github.com/",
+    "liveDemoUrl": "",
+    "image": "/screenzy-1726205184216.png"
+  },
+  {
+    "title": "Admin Dashboard",
+    "description": "Streamlined management tool that offers administrators easy access to analytics and content management.",
+    "technologies": [
+      "React.js",
+      "Syncfusion",
+      "TailwindCSS"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/Admin-Dashboard.git",
+    "liveDemoUrl": "https://admin-dashboard-nirmitsaini.vercel.app/",
+    "image": "/1718182423074.jpeg"
+  }
+]
