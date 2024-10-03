@@ -110,87 +110,87 @@ export default function HomeComponent() {
             <Cover> Projects</Cover>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
-            <div className="pointer-events-none">
-              <div
-                className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
-                style={{
-                  maskImage:
-                    "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                }}
-              ></div>
-              <div
-                className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
-                style={{
-                  maskImage:
-                    "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                }}
-              ></div>
-            </div>
-            <div className="relative h-full">
-              <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-              <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-              <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
-                <div className="my-4">
-                  <img
-                    src="/screenzy-1727798876792.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                    Dynamic Notes
-                  </h4>
-                  <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores, mollitia! Ab tempora voluptatibus ipsum
-                    asperiores?
-                  </p>
-                  <div className="pt-4 flex md:flex-row flex-wrap">
-                    <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      Next.js
-                    </p>
-                    <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      Prisma
-                    </p>
-                    <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      Zod
-                    </p>
-                    <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      Shadcn ui
-                    </p>
-                    <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      TailwindCSS
-                    </p>
-                    <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      Uploadthing
-                    </p>
+            <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
+              <div className="pointer-events-none">
+                <div
+                  className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
+                  style={{
+                    maskImage:
+                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
+                  }}
+                ></div>
+                <div
+                  className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
+                  style={{
+                    maskImage:
+                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
+                  }}
+                ></div>
+              </div>
+              <div className="relative h-full">
+                <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
+                  <div className="my-4">
+                    <img
+                      src="/screenzy-1727798876792.png"
+                      alt=""
+                      loading="lazy"
+                    />
                   </div>
-                  <Button variant="secondary">
-                    <a
-                      href="https://github.com/nirmitsaini1024/Dynamic-Draggable-notes.git"
-                      aria-label="Moonbeam"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Github
-                    </a>
-                  </Button>
-                  <Button variant="secondary" className="ml-2">
-                    <a
-                      href="https://dynamicnotes.vercel.app/"
-                      aria-label="Moonbeam"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Demo
-                    </a>
-                  </Button>
+                  <div>
+                    <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+                      Dynamic Notes
+                    </h4>
+                    <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores, mollitia! Ab tempora voluptatibus ipsum
+                      asperiores?
+                    </p>
+                    <div className="pt-4 flex md:flex-row flex-wrap">
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Next.js
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Prisma
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Zod
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Shadcn ui
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        TailwindCSS
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                        Uploadthing
+                      </p>
+                    </div>
+                    <Button variant="secondary">
+                      <a
+                        href="https://github.com/nirmitsaini1024/Dynamic-Draggable-notes.git"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Github
+                      </a>
+                    </Button>
+                    <Button variant="secondary" className="ml-2">
+                      <a
+                        href="https://dynamicnotes.vercel.app/"
+                        aria-label="Moonbeam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
             <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
               <div className="pointer-events-none">
                 <div
@@ -271,81 +271,10 @@ export default function HomeComponent() {
                 </div>
               </div>
             </div>
-
-            {/* <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
-              <div className="pointer-events-none">
-                <div
-                  className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
-                  style={{
-                    maskImage:
-                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                  }}
-                ></div>
-                <div
-                  className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
-                  style={{
-                    maskImage:
-                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                  }}
-                ></div>
-              </div>
-              <div className="relative h-full">
-                <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
-                  <div className="my-4">
-                    <img src="/1718182423074.jpeg" alt="" loading="lazy" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                      Admin Dashboard
-                    </h4>
-                    <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                      Streamlined management tool that offers administrators
-                      easy access to analytics and content management, enabling
-                      efficient oversight and decision-making for website
-                      operations.
-                    </p>
-                    <div className="pt-4 flex md:flex-row flex-wrap">
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        React.js
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Syncfusion
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        TailwindCSS
-                      </p>
-                    </div>
-                    <Button variant="secondary">
-                      <a
-                        href="https://github.com/nirmitsaini1024/"
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Github
-                      </a>
-                    </Button>
-                    <Button variant="secondary" className="ml-2">
-                      <a
-                        href="https://admin-dashboard-nirmitsaini.vercel.app/"
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
-          <a
-            type="button"
-            className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
+          <Link
             href="/projects"
+            className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
           >
             See More
             <svg
@@ -356,58 +285,17 @@ export default function HomeComponent() {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M19 9l-7 7-7-7"
               ></path>
             </svg>
-          </a>
+          </Link>
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
             {" "}
             Upcoming Projects{" "}
           </h3>
-          {/* <IconCloud
-            iconSlugs={[
-              'amazonaws',
-  'android',
-  'androidstudio',
-  'antdesign',
-  'azuredevops',
-  'css3',
-  'cypress',
-  'dart',
-  'docker',
-  'express',
-  'figma',
-  'firebase',
-  'flutter',
-  'git',
-  'github',
-  'gitlab',
-  'html5',
-  'java',
-  'javascript',
-  'jest',
-  'jira',
-  'mui',
-  'mysql',
-  'nextdotjs',
-  'nginx',
-  'nodedotjs',
-  'npm',
-  'postgresql',
-  'prisma',
-  'react',
-  'reactquery',
-  'redux',
-  'sonarqube',
-  'testinglibrary',
-  'typescript',
-  'vercel',
-  'visualstudiocode',
-            ]}
-          /> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
               <div className="pointer-events-none">
@@ -544,7 +432,6 @@ export default function HomeComponent() {
               </div>
             </div>
           </div>
-
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
             Recent Blogs
           </h3>
@@ -657,7 +544,6 @@ export default function HomeComponent() {
               </p>
             </li>
           </ul>
-
           <div className="border border-gray-200 dark:border-gray-600 w-full my-8"></div>
           <h3 className="text-lg md:text-xl font-bold mb-4 tracking-tight text-gray-900 dark:text-gray-100">
             {" "}
