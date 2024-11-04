@@ -4,8 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { DownloadOutlined } from "@ant-design/icons";
-import projects from '../data/projects.json';
-
+import projects from "../data/projects.json";
 
 interface Project {
   title: string;
@@ -91,12 +90,12 @@ export default function HomeComponent() {
               >
                 <div className="relative h-full w-full">
                   <Image
-                    src="/1680539787022.jpeg"
+                    src="/1680539787022.webp"
                     alt="Profile"
                     fill
                     style={{ objectFit: "cover" }}
                     className="transition duration-500"
-                    loading="lazy"
+                    priority
                   />
                 </div>
               </a>
@@ -118,77 +117,81 @@ export default function HomeComponent() {
             <Cover> Projects</Cover>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {projects.slice(0, 2).map((project, index) => (
-        <div
-          key={index}
-          className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
-        >
-          <div className="pointer-events-none">
-            <div
-              className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
-              style={{
-                maskImage:
-                  "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-              }}
-            ></div>
-            <div
-              className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
-              style={{
-                maskImage:
-                  "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-              }}
-            ></div>
-          </div>
-          <div className="relative h-full">
-            <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-            <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-            <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
-              <div className="my-4">
-                <img src={project.image} alt={project.title} loading="lazy" />
-              </div>
-              <div>
-                <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                  {project.title}
-                </h4>
-                <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                  {project.description}
-                </p>
-                <div className="pt-4 flex md:flex-row flex-wrap">
-                  {project.technologies.map((tech, techIndex) => (
-                    <p
-                      key={techIndex}
-                      className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1"
-                    >
-                      {tech}
-                    </p>
-                  ))}
+            {projects.slice(0, 2).map((project, index) => (
+              <div
+                key={index}
+                className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
+              >
+                <div className="pointer-events-none">
+                  <div
+                    className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
+                    style={{
+                      maskImage:
+                        "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
+                    }}
+                  ></div>
+                  <div
+                    className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
+                    style={{
+                      maskImage:
+                        "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
+                    }}
+                  ></div>
                 </div>
-                <Button variant="secondary">
-                  <a
-                    href={project.githubUrl}
-                    aria-label={project.title}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Github
-                  </a>
-                </Button>
-                <Button variant="secondary" className="ml-2">
-                  <a
-                    href={project.liveDemoUrl}
-                    aria-label={project.title}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                  </a>
-                </Button>
+                <div className="relative h-full">
+                  <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                  <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
+                  <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
+                    <div className="my-4">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        loading="lazy"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+                        {project.title}
+                      </h4>
+                      <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
+                        {project.description}
+                      </p>
+                      <div className="pt-4 flex md:flex-row flex-wrap">
+                        {project.technologies.map((tech, techIndex) => (
+                          <p
+                            key={techIndex}
+                            className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1"
+                          >
+                            {tech}
+                          </p>
+                        ))}
+                      </div>
+                      <Button variant="secondary">
+                        <a
+                          href={project.githubUrl}
+                          aria-label={project.title}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Github
+                        </a>
+                      </Button>
+                      <Button variant="secondary" className="ml-2">
+                        <a
+                          href={project.liveDemoUrl}
+                          aria-label={project.title}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Live Demo
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
-        </div>
-      ))}
-    </div>
           <Link
             href="/projects"
             className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
@@ -236,32 +239,31 @@ export default function HomeComponent() {
                 <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
                 <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
                   <div className="my-4">
-                    <img src="/scrapeflow.png" alt="" loading="lazy" />
+                    <img src="/scrapeflow.webp" alt="" loading="lazy" />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
                       Scrape Flow
                     </h4>
                     <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Automate you workflow with scrapeflow to save your time.
+                      Automate you workflow with scrapeflow to save your time.
                     </p>
                     <div className="pt-4 flex md:flex-row flex-wrap">
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
                         NextJS
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      ReactQuery
+                        ReactQuery
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      Typescript
+                        Typescript
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                      Prisma
+                        Prisma
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
                         TailwindCSS
                       </p>
-                    
                     </div>
                     <Button variant="secondary">
                       <a
@@ -309,7 +311,7 @@ export default function HomeComponent() {
                 <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
                 <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
                   <div className="my-4">
-                    <img src="/calenderly.png" alt="" loading="lazy" />
+                    <img src="/calenderly.webp" alt="" loading="lazy" />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">

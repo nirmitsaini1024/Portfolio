@@ -2,7 +2,7 @@
     {
       "title": "Supernal.aero Clone",
       "description": "Create a stunning website using GSAP with smooth animations and transitions.",
-      "image": "/screenzy-1726210398661.png",
+      "image": "/screenzy-1726210398661.webp",
       "technologies": ["JavaScript", "GSAP"],
       "github": "https://github.com/nirmitsaini1024/",
       "liveDemo": "https://supernalaero.10xdevs.in/"
@@ -10,7 +10,7 @@
     {
       "title": "Surch AI",
       "description": "Never write from scratch again. Use Surch AI to kickstart your next great writing piece. Contributed to the project as a Frontend developer.",
-      "image": "/surch.png",
+      "image": "/surch.webp",
       "technologies": ["NextJs", "Clerk Auth", "Aceternity UI"],
       "github": "",
       "liveDemo": ""
