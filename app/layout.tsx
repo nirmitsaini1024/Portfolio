@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "./components/navbar";
 import { Footer } from "./components/footer";
 
+// Import local fonts as before
 const geistSans = localFont({
   src: "./projects/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -30,12 +31,23 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
           rel="stylesheet"
           media="print"
-          onLoad="this.media='all'" 
+          onLoad={() => {
+            const link = document.querySelector(
+              'link[rel="stylesheet"][href*="Pacifico"]'
+            ) as HTMLLinkElement | null;
+            if (link) {
+              link.media = "all";
+            }
+          }}
         />
       </head>
       <body
