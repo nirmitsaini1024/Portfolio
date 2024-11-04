@@ -236,24 +236,27 @@ export default function HomeComponent() {
                 <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
                 <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
                   <div className="my-4">
-                    <img src="/cryptovault.png" alt="" loading="lazy" />
+                    <img src="/scrapeflow.png" alt="" loading="lazy" />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                      Crypto-Vault
+                      Scrape Flow
                     </h4>
                     <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                    Create, manage, and secure your crypto wallets with a single mnemonic phrase. Built for both Solana and Ethereum blockchains.
+                    Automate you workflow with scrapeflow to save your time.
                     </p>
                     <div className="pt-4 flex md:flex-row flex-wrap">
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
                         NextJS
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        bip39
+                      ReactQuery
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        sol/web3.js
+                      Typescript
+                      </p>
+                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
+                      Prisma
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
                         TailwindCSS

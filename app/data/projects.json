@@ -1,16 +1,5 @@
 [
-  {
-    "title": "Dynamic Notes",
-    "description": "One Step solution for your To-Do List and Notes with Dynamic UI.",
-    "technologies": [
-      "ReactJs",
-      "TailwindCSS",
-      "Framer-Motion"
-    ],
-    "githubUrl": "https://github.com/nirmitsaini1024/Dynamic-Draggable-notes.git",
-    "liveDemoUrl": "https://dynamicnotes.10xdevs.in/",
-    "image": "/screenzy-1727798876792.png"
-  },
+  
   {
     "title": "Setup Your Blog in Minutes",
     "description": "Blogging platform that empowers users to create, publish, and share their own blogs with a global audience.",
@@ -25,6 +14,31 @@
     "githubUrl": "https://github.com/nirmitsaini1024/Blogging",
     "liveDemoUrl": "https://blog.10xdevs.in",
     "image": "/screenzy-1726205184216.png"
+  },
+  {
+    "title": "Crypto Vault",
+    "description": "Create, manage, and secure your crypto wallets with a single mnemonic phrase. Built for both Solana and Ethereum blockchains.",
+    "technologies": [
+      "Next.js",
+      "Bip39",
+      "sol/web3.js",
+      "TailwindCSS"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/CryptoVault",
+    "liveDemoUrl": "https://CryptoVault.10xdevs.in",
+    "image": "/cryptovault.png"
+  },
+  {
+    "title": "Dynamic Notes",
+    "description": "One Step solution for your To-Do List and Notes with Dynamic UI.",
+    "technologies": [
+      "ReactJs",
+      "TailwindCSS",
+      "Framer-Motion"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/Dynamic-Draggable-notes.git",
+    "liveDemoUrl": "https://dynamicnotes.10xdevs.in/",
+    "image": "/screenzy-1727798876792.png"
   },
   {
     "title": "Admin Dashboard",
