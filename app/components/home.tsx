@@ -117,7 +117,7 @@ export default function HomeComponent() {
             <Cover> Projects</Cover>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {projects.slice(0, 2).map((project, index) => (
+            {projects.slice(0, 4).map((project, index) => (
               <div
                 key={index}
                 className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
