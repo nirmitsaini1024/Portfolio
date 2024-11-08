@@ -65,7 +65,7 @@ export default function HomeComponent() {
               </p>
               <Button className="w-22 ml-1 mt-2" variant="secondary" asChild>
                 <Link
-                  href="https://drive.google.com/file/d/1XsHgtcoF1f2X1Vszz27ePxYYpO0--3Wy/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1w8L92wfgU01sjzcwqj6Rwmb558vZnvGT/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
