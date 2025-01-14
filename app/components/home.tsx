@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { DownloadOutlined } from "@ant-design/icons";
 import projects from "../data/projects.json";
+import WorkExperience from "./work";
+import LifeChangelog from "./lifechangelog";
 
 interface Project {
   title: string;
@@ -32,22 +34,24 @@ export default function HomeComponent() {
               </h1>
               <div className="relative leading-7 items-center flex-wrap text-zinc-700 dark:text-zinc-400 mb-5">
                 Building
-                <a
-                  className="inline-block px-2 py-0 font-bold bg-gray-100 dark:bg-zinc-700 dark:text-white  mx-1"
-                  href=""
-                  target="__blank"
-                >
+                <span className="inline-block px-2 py-0 font-bold bg-gray-100 dark:bg-zinc-700 dark:text-white  mx-1">
                   Full-Stack
-                </a>
-                projects , and other
+                </span>
+                projects, and other
                 <span className="font-bold cursor-pointer text-zinc-800 dark:text-zinc-200">
                   {" "}
-                  cool things
+                  cool things.
                 </span>
               </div>
               <p className="text-zinc-600 dark:text-zinc-500">
-              Full-Stack Developer evolving into a Web3 dApp Developer. Find me
-                on{" "}
+                Full-Stack Developer evolving into a
+                <span className="font-bold cursor-pointer text-zinc-800 dark:text-zinc-200">
+                  {" "}
+                  Web3
+                </span>{" "}
+                Developer.
+                <br />
+                Find me on{" "}
                 <LinkPreview
                   url="https://x.com/nirmit_saini"
                   className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
@@ -384,46 +388,7 @@ export default function HomeComponent() {
               </div>
             </a>
           </div>
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-            Work Experience
-          </h3>
-          <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
-            <div className="w-full">
-              <div className="flex flex-col md:flex-row justify-between">
-                <div className="w-full md:w-auto mb-4">
-                  <h4 className="text-base blog-heading md:text-base mb-2 text-gray-900 dark:text-gray-100">
-                    👨🏻‍💻 Upwork Freelancer
-                  </h4>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Worked as a Freelancer on Upwork, building web apps to gain
-                    some hands-on experience.
-                  </p>
-                </div>
-                <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
-                  Oct 2023 - Aug 2024
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
-            <div className="w-full">
-              <div className="flex flex-col md:flex-row justify-between">
-                <div className="w-full md:w-auto mb-4">
-                  <h4 className="text-base blog-heading md:text-base mb-2 text-gray-900 dark:text-gray-100">
-                    👨🏻‍💻 Web Developer Lead
-                  </h4>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    To promote the importance of Web development among club
-                    members and students, encouraging development and
-                    participation in web development projects.
-                  </p>
-                </div>
-                <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
-                  Oct 2023 - Aug 2024
-                </p>
-              </div>
-            </div>
-          </div>
+          <WorkExperience />
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
             Recent Blogs
           </h3>
@@ -442,130 +407,7 @@ export default function HomeComponent() {
               </div>
             </div>
           </a>
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-            {" "}
-            Life Changelog and Updates
-          </h3>
-          {/* <h3 className="text-lg md:text-xl font-bold mb-4 tracking-tight text-gray-900 dark:text-gray-100">
-            {" "}
-            2024
-          </h3>
-          <ul>
-            <li className="mb-4 ml-2">
-              <div className="flex items-center mb-2 text-green-700 dark:text-green-300">
-                <span className="sr-only">Check</span>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  className="text-blue-500 mr-2"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
-                </svg>
-                <p className="font-medium text-gray-900 dark:text-gray-100">
-                  Btech in ECE🤌🏻
-                </p>
-              </div>
-              <p className="text-gray-700 dark:text-gray-400 ml-6">
-                <a href="https://algochurn.com" target="__blank">
-                  Algochurn
-                </a>{" "}
-                FET GKV Haridwar
-              </p>
-            </li>
-          </ul> */}
-          {/* <div className="border border-gray-200 dark:border-gray-600 w-full my-8"></div> */}
-          <h3 className="text-lg md:text-xl font-bold mb-4 tracking-tight text-gray-900 dark:text-gray-100">
-            {" "}
-            2023
-          </h3>
-          <ul>
-            <li className="mb-4 ml-2">
-              <div className="flex items-center mb-2 text-green-700 dark:text-green-300">
-                <span className="sr-only">Check</span>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  className="text-blue-500 mr-2"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
-                </svg>
-                <p className="font-medium text-gray-900 dark:text-gray-100">
-                  Developed interest in Web Development 🤌🏻
-                </p>
-              </div>
-              <p className="text-gray-700 dark:text-gray-400 ml-6">
-                <a href="https://algochurn.com" target="__blank">
-                  Long way to go
-                </a>{" "}
-              </p>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-4 ml-2">
-              <div className="flex items-center mb-2 text-green-700 dark:text-green-300">
-                <span className="sr-only">Check</span>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  className="text-blue-500 mr-2"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
-                </svg>
-                <p className="font-medium text-gray-900 dark:text-gray-100">
-                  Started College
-                </p>
-              </div>
-              <p className="text-gray-700 dark:text-gray-400 ml-6">
-                Opted for Electronics and Communication B.Tech Degree from
-                Faculty of Engineering and Technology, GKV Haridwar.
-              </p>
-            </li>
-          </ul>
-          <div className="border border-gray-200 dark:border-gray-600 w-full my-8"></div>
-          <h3 className="text-lg md:text-xl font-bold mb-4 tracking-tight text-gray-900 dark:text-gray-100">
-            {" "}
-            2021
-          </h3>
-          <ul>
-            <li className="mb-4 ml-2">
-              <div className="flex items-center mb-2 text-green-700 dark:text-green-300">
-                <span className="sr-only">Check</span>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  className="text-blue-500 mr-2"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
-                </svg>
-                <p className="font-medium text-gray-900 dark:text-gray-100">
-                  Completed 12th Grade📜
-                </p>
-              </div>
-              <p className="text-gray-700 dark:text-gray-400 ml-6">
-                Delhi Public School, Dehradun
-              </p>
-            </li>
-          </ul>
+          <LifeChangelog />
         </div>
         {/* <Footer /> */}
       </main>
