@@ -46,7 +46,7 @@ export default function HomeComponent() {
                 </span>
               </div>
               <p className="text-zinc-600 dark:text-zinc-500">
-                Software Developer building web apps and SaaS products. Find me
+              Full-Stack Developer evolving into a Web3 dApp Developer. Find me
                 on{" "}
                 <LinkPreview
                   url="https://x.com/nirmit_saini"
