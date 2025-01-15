@@ -1,0 +1,50 @@
+[
+  {
+    "year": "2025",
+    "updates": [
+      {
+        "title": "Learning Solidity📜",
+        "description": " Started learning Solidity, a programming language for writing smart contracts on various blockchain platforms."
+      },
+      {
+        "title": "Got interest in web3 and blockchain📜",
+        "description": "Started exploring web3 and blockchain technology."
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "updates": [
+      {
+        "title": "Explored Web Development📜",
+        "description": "Explored web development, and learnt Reactjs, Nodejs, Nextjs and many more."
+      },
+      {
+        "title": "Started freelancing📜",
+        "description": "Started working on Upwork."
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "updates": [
+      {
+        "title": "Developed interest in Web Development 🤌🏻",
+        "description": "Long way to go."
+      },
+      {
+        "title": "Started College",
+        "description": "Opted for Electronics and Communication B.Tech Degree from Faculty of Engineering and Technology, GKV Haridwar."
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "updates": [
+      {
+        "title": "Completed 12th Grade📜",
+        "description": "Delhi Public School, Dehradun."
+      }
+    ]
+  }
+]

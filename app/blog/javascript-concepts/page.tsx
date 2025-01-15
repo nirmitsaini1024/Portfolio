@@ -4,7 +4,14 @@ import { CodeBlock } from "@/components/ui/code-block";
 import { closures } from "@/components/codeblocks/closures";
 import { promises } from "@/components/codeblocks/promises";
 import { async } from "@/components/codeblocks/asyncawait";
-import { eventloop, hoisting, prototypes } from "@/components/codeblocks";
+import {
+  debouncing,
+  eventdelegation,
+  eventloop,
+  hoisting,
+  prototypes,
+  Throttling,
+} from "@/components/codeblocks";
 const page = () => {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -87,7 +94,6 @@ const page = () => {
             </a>
           </li>
         </ol>
-
         <h1
           id="closures"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
@@ -105,7 +111,6 @@ const page = () => {
           highlightLines={closures.highlightLines}
           code={closures.code}
         />
-
         <h1
           id="promises-and-asynchronous"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
@@ -122,7 +127,6 @@ const page = () => {
           highlightLines={promises.highlightLines}
           code={promises.code}
         />
-
         <h1
           id="async-await"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
@@ -139,7 +143,6 @@ const page = () => {
           highlightLines={async.highlightLines}
           code={async.code}
         />
-
         <h1
           id="event-loop-and-callbacks"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
@@ -156,7 +159,6 @@ const page = () => {
           highlightLines={eventloop.highlightLines}
           code={eventloop.code}
         />
-
         <h1
           id="hoisting-scope-and-execution-context"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
@@ -188,6 +190,48 @@ const page = () => {
           filename={prototypes.filename}
           highlightLines={prototypes.highlightLines}
           code={prototypes.code}
+        />
+        <h1
+          id="prototypes-and-inheritance"
+          className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
+        >
+          7. Event Delegation
+        </h1>
+        <p className="text-gray-400 mb-4">
+          Event delegation uses a single event listener for multiple child
+          elements, improving performance.
+        </p>
+        <CodeBlock
+          language={eventdelegation.language}
+          filename={eventdelegation.filename}
+          highlightLines={eventdelegation.highlightLines}
+          code={eventdelegation.code}
+        />
+        <h1
+          id="prototypes-and-inheritance"
+          className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
+        >
+          7. Debouncing and Throttling
+        </h1>
+        <p className="text-gray-400 mb-4">
+          <b>Debouncing:</b> Delays execution until after a specified time has
+          elapsed.
+        </p>
+        <CodeBlock
+          language={debouncing.language}
+          filename={debouncing.filename}
+          highlightLines={debouncing.highlightLines}
+          code={debouncing.code}
+        />
+        <p className="text-gray-400 mb-4">
+          <b>Throttling:</b> Ensures a function is called at most once in a
+          specified interval.
+        </p>
+        <CodeBlock
+          language={Throttling.language}
+          filename={Throttling.filename}
+          highlightLines={Throttling.highlightLines}
+          code={Throttling.code}
         />
       </div>
     </main>

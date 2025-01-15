@@ -18,20 +18,23 @@ export default function BlogPage() {
               <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
                 <a href="/blog/javascript-concepts">
                   {" "}
-                  Javascript Concepts - Practical concepts to revise before your
-                  your next interview.
+                  <b> Javascript Concepts</b>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Practical concepts to revise before your your next
+                    interview.
+                  </p>
                 </a>
               </h4>
-              {/* <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
-                  14,165 views
-                </p> */}
+              <p className="flex justify-center items-center text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+                15/01/2025{" "}
+              </p>
             </div>
           </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+        {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           All Posts
-        </h3>
-        <a
+        </h3> */}
+        {/* <a
           className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200"
           href="/blog/ace-the-javascript-interview"
         >
@@ -39,13 +42,13 @@ export default function BlogPage() {
             <div className="flex flex-col md:flex-row justify-between">
               <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
                 Coming Soon... Stay Tuned
-              </h4>
-              {/* <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+              </h4> */}
+        {/* <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
                   14,165 views
                 </p> */}
-            </div>
+        {/* </div>
           </div>
-        </a>
+        </a> */}
       </div>
     </main>
   );

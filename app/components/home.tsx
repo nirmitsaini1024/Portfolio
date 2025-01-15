@@ -1,3 +1,4 @@
+"use client";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { Cover } from "@/components/ui/cover";
 import Image from "next/image";
@@ -7,17 +8,15 @@ import { DownloadOutlined } from "@ant-design/icons";
 import projects from "../data/projects.json";
 import WorkExperience from "./work";
 import LifeChangelog from "./lifechangelog";
+import LocomotiveScroll from "locomotive-scroll";
+import { useEffect } from "react";
 
-interface Project {
-  title: string;
-  description: string;
-  technologies: string[];
-  githubUrl: string;
-  liveDemoUrl: string;
-  image: string;
-}
+
 
 export default function HomeComponent() {
+  useEffect(() => {
+    const locomotiveScroll = new LocomotiveScroll();
+  });
   return (
     <div className="bg-white dark:bg-zinc-900">
       <main className="flex flex-col justify-center bg-white dark:bg-zinc-900 px-8 text-gray-900 dark:text-gray-100 antialiased">
@@ -392,21 +391,25 @@ export default function HomeComponent() {
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
             Recent Blogs
           </h3>
-          <a
-            className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200"
-            href="/blog/ace-the-javascript-interview"
-          >
+          <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
             <div className="w-full">
               <div className="flex flex-col md:flex-row justify-between">
                 <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
-                  Coming Soon... Stay Tuned
+                  <a href="/blog/javascript-concepts">
+                    {" "}
+                    <b> Javascript Concepts</b>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      Practical concepts to revise before your your next
+                      interview.
+                    </p>
+                  </a>
                 </h4>
-                {/* <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
-                  14,165 views
-                </p> */}
+                <p className="flex justify-center items-center text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+                  15/01/2025{" "}
+                </p>
               </div>
             </div>
-          </a>
+          </div>{" "}
           <LifeChangelog />
         </div>
         {/* <Footer /> */}
