@@ -17,8 +17,37 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Nirmit Saini",
-  description: "Nirmit Saini's Portfolio",
+  title: "Nirmit Saini | Web Developer Portfolio",
+  description:
+    "Explore the portfolio of Nirmit Saini, showcasing projects, skills, and expertise in web development, React, and blockchain technology.",
+  keywords: [
+    "Nirmit Saini",
+    "Web Developer Portfolio",
+    "React Developer",
+    "Blockchain Projects",
+    "Frontend Developer",
+    "Next.js Portfolio",
+  ],
+  authors: [
+    { name: "Nirmit Saini", url: "https://nirmitsaini.10xdevs.in" }, 
+  ],
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+  openGraph: {
+    title: "Nirmit Saini | Web Developer Portfolio",
+    description:
+      "Discover the projects and expertise of Nirmit Saini in web and blockchain development.",
+    url: "https://nirmitsaini.10xdevs.in",
+    type: "website",
+    locale: "en_IN", 
+  },
+  twitter: {
+    card: "summary",
+    site: "https://twitter.com/nirmit_saini",
+    title: "Nirmit Saini | Web Developer Portfolio",
+    description:
+      "Explore Nirmit Saini's portfolio featuring web development projects and skills.",
+  },
 };
 
 export default function RootLayout({

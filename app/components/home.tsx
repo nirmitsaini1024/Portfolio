@@ -67,6 +67,7 @@ export default function HomeComponent() {
                   href="https://drive.google.com/file/d/1w8L92wfgU01sjzcwqj6Rwmb558vZnvGT/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Nirmit Saini Resume"
                 >
                   <DownloadOutlined
                     style={{
