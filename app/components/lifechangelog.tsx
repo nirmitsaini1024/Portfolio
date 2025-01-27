@@ -23,8 +23,11 @@ const LifeChangelog: React.FC = () => {
         return response.json();
       })
       .then((data) => setChangelog(data))
-      .catch((error) => console.error("Error fetching data:", error));
+      .catch(() => {
+        // Do nothing
+      });
   }, []);
+  
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
