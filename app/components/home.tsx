@@ -216,6 +216,7 @@ export default function HomeComponent() {
             Upcoming Projects{" "}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
             <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
               <div className="pointer-events-none">
                 <div
@@ -238,98 +239,26 @@ export default function HomeComponent() {
                 <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
                 <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
                   <div className="my-4">
-                    <img src="/scrapeflow.webp" alt="" loading="lazy" />
+                    <img src="/jira.webp" alt="" loading="lazy" />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                      Scrape Flow
+                      Team collaboration platform
                     </h4>
                     <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                      Automate you workflow with scrapeflow to save your time.
+                      Made for complex projects or everyday tasks. ⚡ Plan and
+                      organize tasks. From short projects, to large
+                      cross-functional programs.
                     </p>
                     <div className="pt-4 flex md:flex-row flex-wrap">
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        NextJS
+                        Reactjs
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        ReactQuery
+                        Nodejs (Express)
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Typescript
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Prisma
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        TailwindCSS
-                      </p>
-                    </div>
-                    <Button variant="secondary">
-                      <a
-                        href="https://github.com/nirmitsaini1024/CryptoVault"
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Github
-                      </a>
-                    </Button>
-                    <Button variant="secondary" className="ml-2">
-                      <a
-                        href="https://cryptovault.10xdevs.in/"
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
-              <div className="pointer-events-none">
-                <div
-                  className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
-                  style={{
-                    maskImage:
-                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                  }}
-                ></div>
-                <div
-                  className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
-                  style={{
-                    maskImage:
-                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                  }}
-                ></div>
-              </div>
-              <div className="relative h-full">
-                <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
-                  <div className="my-4">
-                    <img src="/calenderly.webp" alt="" loading="lazy" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                      Schedulrr
-                    </h4>
-                    <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                      Scheduling platform designed to streamline appointment
-                      booking with ease and efficiency.
-                      {/* It offers users a seamless experience to manage their time effectively while enhancing productivity through customizable scheduling options. */}
-                    </p>
-                    <div className="pt-4 flex md:flex-row flex-wrap">
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        NextJS
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Prisma (NeonDB)
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Shadcn UI
+                        MongoDb
                       </p>
                       <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
                         TailwindCSS
@@ -338,7 +267,7 @@ export default function HomeComponent() {
                         Google API
                       </p>
                     </div>
-                    <Button variant="secondary">
+                    {/* <Button variant="secondary">
                       <a
                         href=""
                         aria-label="Moonbeam"
@@ -357,7 +286,7 @@ export default function HomeComponent() {
                       >
                         Live Demo
                       </a>
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </div>

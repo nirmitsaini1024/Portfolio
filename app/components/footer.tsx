@@ -17,18 +17,21 @@ export function Footer() {
             <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/blog"
+              aria-label="Nirmit Saini Blog"
             >
               Blog
             </Link>
             <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/projects"
+              aria-label="Nirmit Saini Projects"
             >
               Projects
             </Link>
             <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/contact"
+              aria-label="Nirmit Saini Contact"
             >
               Links
             </Link>
@@ -39,6 +42,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/nirmitsaini1024/"
+              aria-label="Nirmit Saini GitHub"
             >
               GitHub
             </a>
@@ -55,6 +59,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://x.com/nirmit_saini"
+              aria-label="Nirmit Saini Twitter"
             >
               Twitter
             </Link>

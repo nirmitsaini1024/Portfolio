@@ -16,12 +16,13 @@ export default function BlogPage() {
           <div className="w-full">
             <div className="flex flex-col md:flex-row justify-between">
               <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
-                <a href="/blog/javascript-concepts">
-                  {" "}
-                  <b> Javascript Concepts</b>
+                <a
+                  href="/blog/javascript-concepts"
+                  aria-label="Learn practical JavaScript concepts for interview preparation"
+                >
+                  <b>JavaScript Concepts</b>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Practical concepts to revise before your your next
-                    interview.
+                    Practical concepts to revise before your next interview.
                   </p>
                 </a>
               </h4>

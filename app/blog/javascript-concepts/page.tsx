@@ -42,6 +42,7 @@ const page = () => {
           <li>
             <a
               href="#closures"
+              aria-label="Closures"
               className="text-blue-500 hover:text-blue-600 transition-colors underline"
               onClick={handleLinkClick}
             >
