@@ -91,7 +91,7 @@ export default function HomeComponent() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/profile.webp"
-                    alt="Profile"
+                    alt="Nirmit Saini Profile"
                     fill
                     style={{ objectFit: "cover" }}
                     className="transition duration-500"
