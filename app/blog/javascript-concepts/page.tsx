@@ -96,6 +96,42 @@ const page = () => {
               Prototypes and Inheritance
             </a>
           </li>
+          <li>
+            <a
+              href="#Event-delegation"
+              className="text-blue-500 hover:text-blue-600 transition-colors underline"
+              onClick={handleLinkClick}
+            >
+              Event delegation
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Debouncing-and-Throttling"
+              className="text-blue-500 hover:text-blue-600 transition-colors underline"
+              onClick={handleLinkClick}
+            >
+              Debouncing and Throttling
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Higher-order-Functions"
+              className="text-blue-500 hover:text-blue-600 transition-colors underline"
+              onClick={handleLinkClick}
+            >
+              Higher order Functions (Map, Filter, Reduce)
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Error-Handling"
+              className="text-blue-500 hover:text-blue-600 transition-colors underline"
+              onClick={handleLinkClick}
+            >
+              Error Handling
+            </a>
+          </li>
         </ol>
         <h1
           id="closures"
@@ -195,7 +231,7 @@ const page = () => {
           code={prototypes.code}
         />
         <h1
-          id="prototypes-and-inheritance"
+          id="Event-delegation"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
           7. Event Delegation
@@ -211,7 +247,7 @@ const page = () => {
           code={eventdelegation.code}
         />
         <h1
-          id="prototypes-and-inheritance"
+          id="Debouncing-and-Throttling"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
           8. Debouncing and Throttling
@@ -251,21 +287,23 @@ const page = () => {
           filename={higherorderfn.filename}
           highlightLines={higherorderfn.highlightLines}
           code={higherorderfn.code}
-        /><h1
-        id="Error-Handling"
-        className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
-      >
-        10. Error Handling
-      </h1>
-      <p className="text-gray-400 mb-4">
-      Handle errors gracefully using try-catch blocks to ensure your code doesn't crash unexpectedly.
-      </p>
-      <CodeBlock
-        language={trycatch.language}
-        filename={trycatch.filename}
-        highlightLines={trycatch.highlightLines}
-        code={trycatch.code}
-      />
+        />
+        <h1
+          id="Error-Handling"
+          className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
+        >
+          10. Error Handling
+        </h1>
+        <p className="text-gray-400 mb-4">
+          Handle errors gracefully using try-catch blocks to ensure your code
+          doesn't crash unexpectedly.
+        </p>
+        <CodeBlock
+          language={trycatch.language}
+          filename={trycatch.filename}
+          highlightLines={trycatch.highlightLines}
+          code={trycatch.code}
+        />
       </div>
     </main>
   );
