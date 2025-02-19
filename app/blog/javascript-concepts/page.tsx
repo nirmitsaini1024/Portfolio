@@ -12,6 +12,8 @@ import {
   prototypes,
   Throttling,
 } from "@/components/codeblocks";
+import { higherorderfn } from "@/components/codeblocks/higher-order";
+import { trycatch } from "@/components/codeblocks/try-catch";
 const page = () => {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -212,7 +214,7 @@ const page = () => {
           id="prototypes-and-inheritance"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          7. Debouncing and Throttling
+          8. Debouncing and Throttling
         </h1>
         <p className="text-gray-400 mb-4">
           <b>Debouncing:</b> Delays execution until after a specified time has
@@ -234,6 +236,36 @@ const page = () => {
           highlightLines={Throttling.highlightLines}
           code={Throttling.code}
         />
+        <h1
+          id="Higher-order-Functions"
+          className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
+        >
+          9. Higher-order Functions
+        </h1>
+        <p className="text-gray-400 mb-4">
+          Higher-order functions like map, filter, and reduce simplify array
+          manipulation and functional programming.
+        </p>
+        <CodeBlock
+          language={higherorderfn.language}
+          filename={higherorderfn.filename}
+          highlightLines={higherorderfn.highlightLines}
+          code={higherorderfn.code}
+        /><h1
+        id="Error-Handling"
+        className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
+      >
+        10. Error Handling
+      </h1>
+      <p className="text-gray-400 mb-4">
+      Handle errors gracefully using try-catch blocks to ensure your code doesn't crash unexpectedly.
+      </p>
+      <CodeBlock
+        language={trycatch.language}
+        filename={trycatch.filename}
+        highlightLines={trycatch.highlightLines}
+        code={trycatch.code}
+      />
       </div>
     </main>
   );

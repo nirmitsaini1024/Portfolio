@@ -19,7 +19,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Nirmit Saini | Web Developer Portfolio",
   description:
-    "Explore the portfolio of Nirmit Saini, showcasing projects, skills, and expertise in web development, React, and blockchain technology.",
+    "Explore the portfolio of Nirmit Saini, showcasing projects, skills, and expertise in web development, and blockchain technology.",
   keywords: [
     "Nirmit Saini",
     "Web Developer Portfolio",
