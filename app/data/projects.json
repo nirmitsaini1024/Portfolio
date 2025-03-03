@@ -16,6 +16,18 @@
     "image": "/screenzy-1726205184216.webp"
   },
   {
+    "title": "Zentry UI",
+    "description": "Simple and intuitive user interview with animations using Framer Motion for a gaming website.",
+    "technologies": [
+      "Reactjs",
+      "Framer Motion",
+      "TailwindCSS"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/Zentry-Awards",
+    "liveDemoUrl": "https://Zentry.10xdevs.in",
+    "image": "/Zentry.webp"
+  },
+  {
     "title": "Crypto Vault",
     "description": "Create, manage, and secure your crypto wallets with a single mnemonic phrase. Built for both Solana and Ethereum blockchains.",
     "technologies": [
