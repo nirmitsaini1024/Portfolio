@@ -16,7 +16,7 @@
   },
   {
     "title": "Telegram Subscription & Access Control",
-    "description": " A SaaS platform that monetizes Telegram groups with subscription-based access, automated bots, and real-time control. Supports PayPal payments with multi-group & tiered memberships. Built with Node.js, Hono, and Socket.io.",
+    "description": " A SaaS platform that monetizes Telegram groups with subscription-based access, automated bots. Supports PayPal payments with multi-group & memberships.",
     "technologies": [
       "Nextjs",
       "Nodejs",
