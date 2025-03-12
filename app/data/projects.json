@@ -1,5 +1,4 @@
 [
-  
   {
     "title": "Setup Your Blog in Minutes",
     "description": "Blogging platform that empowers users to create, publish, and share their own blogs with a global audience.",
@@ -14,6 +13,20 @@
     "githubUrl": "https://github.com/nirmitsaini1024/Blogging",
     "liveDemoUrl": "https://blog.10xdevs.in",
     "image": "/screenzy-1726205184216.webp"
+  },
+  {
+    "title": "Telegram Subscription & Access Control",
+    "description": " A SaaS platform that monetizes Telegram groups with subscription-based access, automated bots, and real-time control. Supports PayPal payments with multi-group & tiered memberships. Built with Node.js, Hono, and Socket.io.",
+    "technologies": [
+      "Nextjs",
+      "Nodejs",
+      "Hono",
+      "Socket.io",
+      "TailwindCSS"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/",
+    "liveDemoUrl": "",
+    "image": "/Zentry.webp"
   },
   {
     "title": "Zentry UI",
