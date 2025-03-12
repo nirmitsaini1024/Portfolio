@@ -5,7 +5,10 @@ export default function BlogPage() {
     <>
       <Head>
         <title>Nirmit Saini Blogs</title>
-        <meta name="description" content="Explore insightful blogs by Nirmit Saini on Web development, and Blockchain technology." />
+        <meta
+          name="description"
+          content="Explore insightful blogs by Nirmit Saini on Web development, and Blockchain technology."
+        />
         <meta name="robots" content="index, follow" />
       </Head>
       <main className="flex flex-col justify-center bg-white dark:bg-zinc-900 px-8 text-gray-900 dark:text-gray-100 antialiased">
