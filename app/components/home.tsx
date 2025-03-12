@@ -90,7 +90,7 @@ export default function HomeComponent() {
               >
                 <div className="relative h-full w-full">
                   <Image
-                    src="/profile.webp"
+                    src="/main-profile.webp"
                     alt="Nirmit Saini Profile"
                     fill
                     style={{ objectFit: "cover" }}

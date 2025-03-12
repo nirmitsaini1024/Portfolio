@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nirmitsaini.10xdevs.in/sitemap.xml

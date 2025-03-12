@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "./components/navbar";
 import { Footer } from "./components/footer";
+import LocomotiveProvider from "./components/LocomotiveProvider";
 
 const geistSans = localFont({
   src: "./projects/fonts/GeistVF.woff",
@@ -28,9 +29,7 @@ export const metadata: Metadata = {
     "Frontend Developer",
     "Next.js Portfolio",
   ],
-  authors: [
-    { name: "Nirmit Saini", url: "https://nirmitsaini.10xdevs.in" }, 
-  ],
+  authors: [{ name: "Nirmit Saini", url: "https://nirmitsaini.10xdevs.in" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
       "Discover the projects and expertise of Nirmit Saini in web and blockchain development.",
     url: "https://nirmitsaini.10xdevs.in",
     type: "website",
-    locale: "en_IN", 
+    locale: "en_IN",
   },
   twitter: {
     card: "summary",
@@ -72,8 +71,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
+          <Navbar /> <LocomotiveProvider>{children}</LocomotiveProvider>
           <Footer />
         </ThemeProvider>
       </body>
