@@ -13,7 +13,8 @@
     "githubUrl": "https://github.com/nirmitsaini1024/Blogging",
     "liveDemoUrl": "https://blog.10xdevs.in",
     "image": "/screenzy-1726205184216.webp"
-  },{
+  },
+  {
     "title": "Zentry UI",
     "description": "Simple and intuitive user interview with animations using Framer Motion for a gaming website.",
     "technologies": [
@@ -24,7 +25,8 @@
     "githubUrl": "https://github.com/nirmitsaini1024/Zentry-Awards",
     "liveDemoUrl": "https://Zentry.10xdevs.in",
     "image": "/Zentry.webp"
-  },{
+  },
+  {
     "title": "Astute Ai",
     "description": "Simple and intuitive user interview with animations for a startup Framer Motion",
     "technologies": [
@@ -34,10 +36,20 @@
     ],
     "githubUrl": "https://github.com/nirmitsaini1024/astuteai",
     "liveDemoUrl": "https://astuteai.10xdevs.in",
-    "image": "/astute.webp"
+    "image": "/astute.png"
   },
-  
-  
+  {
+    "title": "Admin Dashboard",
+    "description": "Streamlined management tool that offers administrators easy access to analytics and content management.",
+    "technologies": [
+      "React.js",
+      "Syncfusion",
+      "TailwindCSS"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/Admin-Dashboard.git",
+    "liveDemoUrl": "https://admindashboard.10xdevs.in",
+    "image": "/1718182423074.webp"
+  },
   {
     "title": "Crypto Vault",
     "description": "Create, manage, and secure your crypto wallets with a single mnemonic phrase. Built for both Solana and Ethereum blockchains.",
@@ -64,15 +76,17 @@
     "image": "/screenzy-1727798876792.webp"
   },
   {
-    "title": "Admin Dashboard",
-    "description": "Streamlined management tool that offers administrators easy access to analytics and content management.",
+    "title": "Telegram Subscription & Access Control",
+    "description": " A SaaS platform that monetizes Telegram groups with subscription-based access, automated bots. Supports PayPal payments with multi-group & memberships.",
     "technologies": [
-      "React.js",
-      "Syncfusion",
+      "Nextjs",
+      "Nodejs",
+      "Hono",
+      "Socket.io",
       "TailwindCSS"
     ],
-    "githubUrl": "https://github.com/nirmitsaini1024/Admin-Dashboard.git",
-    "liveDemoUrl": "https://admindashboard.10xdevs.in",
-    "image": "/1718182423074.webp"
-  }
+    "githubUrl": "https://github.com/nirmitsaini1024/",
+    "liveDemoUrl": "",
+    "image": "/Zentry.webp"
+  },
 ]
