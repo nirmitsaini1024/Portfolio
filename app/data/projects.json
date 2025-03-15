@@ -36,20 +36,7 @@
     "liveDemoUrl": "https://astuteai.10xdevs.in",
     "image": "/astute.webp"
   },
-  {
-    "title": "Telegram Subscription & Access Control",
-    "description": " A SaaS platform that monetizes Telegram groups with subscription-based access, automated bots. Supports PayPal payments with multi-group & memberships.",
-    "technologies": [
-      "Nextjs",
-      "Nodejs",
-      "Hono",
-      "Socket.io",
-      "TailwindCSS"
-    ],
-    "githubUrl": "https://github.com/nirmitsaini1024/",
-    "liveDemoUrl": "",
-    "image": "/Zentry.webp"
-  },
+  
   
   {
     "title": "Crypto Vault",
