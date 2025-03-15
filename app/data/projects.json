@@ -24,6 +24,17 @@
     "githubUrl": "https://github.com/nirmitsaini1024/Zentry-Awards",
     "liveDemoUrl": "https://Zentry.10xdevs.in",
     "image": "/Zentry.webp"
+  },{
+    "title": "Astute Ai",
+    "description": "Simple and intuitive user interview with animations for a startup Framer Motion",
+    "technologies": [
+      "Reactjs",
+      "Framer Motion",
+      "TailwindCSS"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/astuteai",
+    "liveDemoUrl": "https://astuteai.10xdevs.in",
+    "image": "/astute.webp"
   },
   {
     "title": "Telegram Subscription & Access Control",
