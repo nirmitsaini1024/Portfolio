@@ -24,13 +24,13 @@ export function Footer() {
             <Link
               className="text-gray-500 hover:text-gray-600 transition"
               href="/projects"
-              aria-label="Nirmit Saini Projects"
+              aria-label="Nirmit Saini Changelog"
             >
-              Projects
+              Life Changelog
             </Link>
             <Link
               className="text-gray-500 hover:text-gray-600 transition"
-              href="/contact"
+              href="/lifechangelog"
               aria-label="Nirmit Saini Contact"
             >
               Links

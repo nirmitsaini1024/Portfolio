@@ -7,7 +7,6 @@ import Link from "next/link";
 import { DownloadOutlined } from "@ant-design/icons";
 import projects from "../data/projects.json";
 import WorkExperience from "./work";
-import LifeChangelog from "./lifechangelog";
 
 export default function HomeComponent() {
   return (
@@ -117,7 +116,7 @@ export default function HomeComponent() {
             <Cover> Projects</Cover>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {projects.slice(0, 4).map((project, index) => (
+            {projects.slice(0, 6).map((project, index) => (
               <div
                 key={index}
                 className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
@@ -217,7 +216,6 @@ export default function HomeComponent() {
             Upcoming Projects{" "}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            
             <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
               <div className="pointer-events-none">
                 <div
@@ -268,26 +266,6 @@ export default function HomeComponent() {
                         Google API
                       </p>
                     </div>
-                    {/* <Button variant="secondary">
-                      <a
-                        href=""
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Github
-                      </a>
-                    </Button>
-                    <Button variant="secondary" className="ml-2">
-                      <a
-                        href=""
-                        aria-label="Moonbeam"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                    </Button> */}
                   </div>
                 </div>
               </div>
@@ -336,9 +314,28 @@ export default function HomeComponent() {
               </div>
             </div>
           </div>{" "}
-          <LifeChangelog />
+          <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
+            <div className="w-full">
+              <div className="flex flex-col md:flex-row justify-between">
+                <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
+                  <a
+                    href="/blog/react-over-nextjs"
+                    aria-label="React.js vs Next.js: A detailed comparison"
+                  >
+                    <b>Next.js vs React.js </b>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      Why Do We Need Next.js When React.js Already Exists?
+                    </p>
+                  </a>
+                </h4>
+                <p className="flex justify-center items-center text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+                  13/03/2025
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* <Footer /> */}
+        {/* <achievement /> */}
       </main>
     </div>
   );

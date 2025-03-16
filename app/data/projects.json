@@ -27,6 +27,18 @@
     "image": "/Zentry.webp"
   },
   {
+    "title": "AKQA UI",
+    "description": "Simple and intuitive user interview with animations using GSAP",
+    "technologies": [
+      "Reactjs",
+      "GSAP",
+      "TailwindCSS"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/akqa",
+    "liveDemoUrl": "https://akqa-five.vercel.app/",
+    "image": "/akqa.webp"
+  },
+  {
     "title": "Astute Ai",
     "description": "Simple and intuitive user interview with animations for a startup Framer Motion",
     "technologies": [
@@ -36,7 +48,7 @@
     ],
     "githubUrl": "https://github.com/nirmitsaini1024/astuteai",
     "liveDemoUrl": "https://astuteai.10xdevs.in",
-    "image": "/astute.png"
+    "image": "/astute.webp"
   },
   {
     "title": "Admin Dashboard",
