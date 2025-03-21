@@ -10,5 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://nirmitsaini.10xdevs.in/blog",
       lastModified: new Date().toISOString(),
     },
+    {
+      url: "https://nirmitsaini.10xdevs.in/projects",
+      lastModified: new Date().toISOString(),
+    },
   ];
 }
