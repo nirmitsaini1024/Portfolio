@@ -63,7 +63,7 @@ export default function HomeComponent() {
               </p>
               <Button className="w-22 ml-1 mt-2" variant="secondary" asChild>
                 <Link
-                  href="https://drive.google.com/file/d/1w8L92wfgU01sjzcwqj6Rwmb558vZnvGT/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1JIsBCjrMfsiy_6RrY_5sF5JFUo_o0Wn8/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Nirmit Saini Resume"
@@ -238,7 +238,7 @@ export default function HomeComponent() {
                 <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
                 <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
                   <div className="my-4">
-                    <img src="/jira.webp" alt="" loading="lazy" />
+                    <img src="/jira.webp" alt="jira clone" loading="lazy" />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
