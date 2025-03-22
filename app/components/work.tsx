@@ -6,7 +6,29 @@ const WorkExperience = () => {
       <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
         Work Experience
       </h3>
-
+      <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
+        <div className="w-full">
+          {" "}
+      {/* dolphant ai */}
+      <a href="https://dolphant.ai/" target="_blank">
+            <div className="flex flex-col md:flex-row justify-between">
+              <div className="w-full md:w-auto mb-4">
+                <h4 className="text-base blog-heading md:text-base mb-2 font-itlic text-blue-300">
+                  <b>👨🏻‍💻 Dolphant-ai ( Startup )</b>
+                </h4>
+                <p className="text-gray-500 dark:text-gray-400">
+                  <b>Software Developer </b>
+                  <br />
+                  Currently working as a Software Developer, building responsive and cross-browser applications. Focused on optimizing performance and creating seamless user experiences across devices.
+                </p>
+              </div>
+              <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
+                March 2025 - Currently working
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
       {/* Astute ai */}
       <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
         <div className="w-full">
@@ -14,11 +36,11 @@ const WorkExperience = () => {
           <a href="https://www.linkedin.com/company/astute-ai/" target="_blank">
             <div className="flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-auto mb-4">
-                <h4 className="text-base blog-heading md:text-base mb-2 text-blue-200">
+                <h4 className="text-base blog-heading md:text-base mb-2 text-white">
                   <b>👨🏻‍💻 Astute-ai ( Startup )</b>
                 </h4>
                 <p className="text-gray-500 dark:text-gray-400">
-                  <b>Working as a Frontend Developer </b>
+                  <b>Frontend Developer </b>
                   <br />
                   Developed the complete web architecture at Astute AI,
                   including dynamic homepages and conversion-focused landing
@@ -26,7 +48,7 @@ const WorkExperience = () => {
                 </p>
               </div>
               <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
-                Nov 204 - currently working
+                Nov 2024 - Mar 2025
               </p>
             </div>
           </a>
@@ -53,7 +75,7 @@ const WorkExperience = () => {
       </div>
 
       {/* Web Developer Lead */}
-      <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
+      {/* <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
         <div className="w-full">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="w-full md:w-auto mb-4">
@@ -71,7 +93,7 @@ const WorkExperience = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
