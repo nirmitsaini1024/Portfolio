@@ -14,7 +14,7 @@ const WorkExperience = () => {
             <div className="flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-auto mb-4">
                 <h4 className="text-base blog-heading md:text-base mb-2 font-itlic text-blue-300">
-                  <b>👨🏻‍💻 Dolphant-ai ( Startup )</b>
+                  <b>👨🏻‍💻 Dolphant-ai</b>
                 </h4>
                 <p className="text-gray-500 dark:text-gray-400">
                   <b>Software Developer </b>
