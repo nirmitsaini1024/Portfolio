@@ -19,7 +19,7 @@ const WorkExperience = () => {
                 <p className="text-gray-500 dark:text-gray-400">
                   <b>Software Developer </b>
                   <br />
-                  Working on multi-tenant architecture with complex workflow orchestration. Implemented BFS in directed graphs, iterative deepening with event-driven processing, and immutable audit logging. Built visual workflow designer with node-based interface using NestJS repository pattern.
+                  Working on multi-tenant architecture with complex workflow orchestration. Implemented iterative deepening with event-driven processing, immutable audit logging, and access control lists (ACL) for fine-grained permissions across tenants. Built visual workflow designer with node-based interface using NestJS repository pattern.
                 </p>
               </div>
               <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
