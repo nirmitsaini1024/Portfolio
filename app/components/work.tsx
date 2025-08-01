@@ -9,21 +9,43 @@ const WorkExperience = () => {
       <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
         <div className="w-full">
           {" "}
-      {/* dolphant ai */}
-      <a href="https://dolphant.ai/" target="_blank">
+      {/* thinkact ai */}
+      <a href="https://thinkact.ai/" target="_blank">
             <div className="flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-auto mb-4">
-                <h4 className="text-base blog-heading md:text-base mb-2 font-itlic text-blue-300">
+                <h4 className="text-base blog-heading md:text-base mb-2 font-itlic text-white">
+                  <b>👨🏻‍💻 ThinkAct.ai</b>
+                </h4>
+                <p className="text-gray-500 dark:text-gray-400">
+                  <b>Software Developer </b>
+                  <br />
+                  Working on multi-tenant architecture with complex workflow orchestration. Implemented BFS in directed graphs, iterative deepening with event-driven processing, and immutable audit logging. Built visual workflow designer with node-based interface using NestJS repository pattern.
+                </p>
+              </div>
+              <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
+                July 2025 - Currently working
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      {/* dolphant ai */}
+      <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
+        <div className="w-full">
+          <a href="https://dolphant.ai/" target="_blank">
+            <div className="flex flex-col md:flex-row justify-between">
+              <div className="w-full md:w-auto mb-4">
+                <h4 className="text-base blog-heading md:text-base mb-2 text-white">
                   <b>👨🏻‍💻 Dolphant-ai</b>
                 </h4>
                 <p className="text-gray-500 dark:text-gray-400">
                   <b>Software Developer </b>
                   <br />
-                  Currently working as a Software Developer, building responsive and cross-browser applications. Focused on optimizing performance and creating seamless user experiences across devices.
+                  Worked as a Software Developer, building responsive and cross-browser applications. Focused on optimizing performance and creating seamless user experiences across devices.
                 </p>
               </div>
               <p className="text-gray-500 text-left md:text-right whitespace-nowrap mb-4 md:mb-0">
-                March 2025 - Currently working
+                March 2025 - June 2025
               </p>
             </div>
           </a>
@@ -37,7 +59,7 @@ const WorkExperience = () => {
             <div className="flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-auto mb-4">
                 <h4 className="text-base blog-heading md:text-base mb-2 text-white">
-                  <b>👨🏻‍💻 Astute-ai ( Startup )</b>
+                  <b>👨🏻‍💻 Astute-ai</b>
                 </h4>
                 <p className="text-gray-500 dark:text-gray-400">
                   <b>Frontend Developer </b>
