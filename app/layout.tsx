@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "./components/navbar";
 import { Footer } from "./components/footer";
 import LocomotiveProvider from "./components/LocomotiveProvider";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = localFont({
   src: "./projects/fonts/GeistVF.woff",
@@ -74,6 +75,7 @@ export default function RootLayout({
           <Navbar /> <LocomotiveProvider>{children}</LocomotiveProvider>
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
