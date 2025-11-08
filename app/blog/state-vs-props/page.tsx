@@ -9,6 +9,8 @@ import {
   controlledComponents,
   whenToUse,
   statePropPatterns,
+  updatingProps,
+  commonQuestions,
 } from "@/components/codeblocks";
 
 const page = () => {
@@ -47,6 +49,15 @@ const page = () => {
               onClick={handleLinkClick}
             >
               What are Props?
+            </a>
+          </li>
+          <li>
+            <a
+              href="#can-you-update-props"
+              className="text-blue-500 hover:text-blue-600 transition-colors underline"
+              onClick={handleLinkClick}
+            >
+              Can You Update Props in Children?
             </a>
           </li>
           <li>
@@ -112,6 +123,15 @@ const page = () => {
               Common Patterns and Best Practices
             </a>
           </li>
+          <li>
+            <a
+              href="#common-questions"
+              className="text-blue-500 hover:text-blue-600 transition-colors underline"
+              onClick={handleLinkClick}
+            >
+              Common Questions & Answers
+            </a>
+          </li>
         </ol>
 
         <h1
@@ -143,10 +163,53 @@ const page = () => {
         />
 
         <h1
+          id="can-you-update-props"
+          className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
+        >
+          2. Can You Update Props in Children?
+        </h1>
+        <p className="text-gray-400 mb-4">
+          <b>Short Answer: NO</b> - You cannot directly update props in a child component. Props are immutable and read-only.
+        </p>
+        <p className="text-gray-400 mb-4">
+          <b>Why Props Are Immutable:</b>
+        </p>
+        <ul className="text-gray-400 list-disc pl-5 mb-4 space-y-1">
+          <li>Props maintain <b>unidirectional data flow</b> - data flows down from parent to child</li>
+          <li>Immutability ensures <b>predictable behavior</b> and prevents bugs</li>
+          <li>It enforces the <b>"single source of truth"</b> principle - data is owned by the parent</li>
+          <li>Attempting to modify props will result in a <b>runtime error</b> in React</li>
+        </ul>
+        <p className="text-gray-400 mb-4">
+          <b>How to "Update" Props (The Correct Way):</b>
+        </p>
+        <p className="text-gray-400 mb-4">
+          Since you can't modify props directly, you need to use the <b>"Props Down, Events Up"</b> pattern:
+        </p>
+        <ol className="text-gray-400 list-decimal pl-5 mb-4 space-y-2">
+          <li><b>Parent owns the state</b> - The data lives in the parent component's state</li>
+          <li><b>Pass data down as props</b> - Parent passes the data to child as props</li>
+          <li><b>Pass callback functions as props</b> - Parent passes a function that can update its state</li>
+          <li><b>Child calls the callback</b> - When child needs to "update" the prop, it calls the parent's callback</li>
+          <li><b>Parent updates its state</b> - Parent's state changes, which updates the prop passed to child</li>
+        </ol>
+        <CodeBlock
+          language={updatingProps.language}
+          filename={updatingProps.filename}
+          highlightLines={updatingProps.highlightLines}
+          code={updatingProps.code}
+        />
+        <div className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
+          <p className="text-gray-700 dark:text-gray-300">
+            <b>💡 Remember:</b> If a child component needs to modify data, that data should be in the parent's state, not passed as a prop. The child can request changes through callback functions, but the parent always controls the data.
+          </p>
+        </div>
+
+        <h1
           id="what-is-state"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          2. What is State?
+          3. What is State?
         </h1>
         <p className="text-gray-400 mb-4">
           <b>State</b> is mutable data that belongs to a component. It
@@ -174,7 +237,7 @@ const page = () => {
           id="key-differences"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          3. Key Differences
+          4. Key Differences
         </h1>
         <div className="overflow-x-auto mb-4">
           <table className="min-w-full border-collapse border border-gray-300 dark:border-zinc-700">
@@ -230,7 +293,7 @@ const page = () => {
           id="when-to-use-props"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          4. When to Use Props
+          5. When to Use Props
         </h1>
         <p className="text-gray-400 mb-4">
           Use <b>Props</b> when you need to:
@@ -268,7 +331,7 @@ const page = () => {
           id="when-to-use-state"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          5. When to Use State
+          6. When to Use State
         </h1>
         <p className="text-gray-400 mb-4">
           Use <b>State</b> when you need to:
@@ -304,7 +367,7 @@ const page = () => {
           id="why-props-over-state"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          6. Why Props Over State?
+          7. Why Props Over State?
         </h1>
         <p className="text-gray-400 mb-4">
           Choose <b>Props</b> over State when:
@@ -348,7 +411,7 @@ const page = () => {
           id="why-state-over-props"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          7. Why State Over Props?
+          8. Why State Over Props?
         </h1>
         <p className="text-gray-400 mb-4">
           Choose <b>State</b> over Props when:
@@ -392,7 +455,7 @@ const page = () => {
           id="common-patterns"
           className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
         >
-          8. Common Patterns and Best Practices
+          9. Common Patterns and Best Practices
         </h1>
         <p className="text-gray-400 mb-4">
           Here are some common patterns for using State and Props together:
@@ -465,6 +528,156 @@ const page = () => {
               </ul>
             </div>
           </div>
+        </div>
+
+        <h1
+          id="common-questions"
+          className="font-bold text-2xl sm:text-3xl md:text-5xl tracking-tight mb-4 mt-8 text-black dark:text-white scroll-mt-16"
+        >
+          10. Common Questions & Answers
+        </h1>
+        <p className="text-gray-400 mb-4">
+          Here are answers to frequently asked questions about State and Props
+          in React. These questions often come up during development and
+          interviews.
+        </p>
+
+        <div className="space-y-6 mb-6">
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q1: Can you pass state as props?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Yes!</b> This is the most common pattern in React. You can
+              pass any value as a prop, including state values.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q2: Should you copy props to state?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Generally no.</b> Use props directly unless you need to modify
+              them independently. Copying props to state can lead to bugs when
+              props change but your local state doesn't update.
+            </p>
+            <p className="text-gray-400">
+              <b>Exception:</b> It's okay to initialize state from props if the
+              state needs to be independent after initialization (like a counter
+              that starts from a prop value).
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q3: Can props be functions?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Yes!</b> Functions are first-class values in JavaScript. You
+              can pass functions as props, which is how the "Props Down, Events
+              Up" pattern works.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q4: What happens if you don't pass a prop?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              The prop will be <b>undefined</b>. Always use default parameters or
+              optional chaining to handle missing props gracefully.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q5: Can you have both props and state in the same component?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Absolutely!</b> This is a very common pattern. Use props for
+              data from parent, and state for component-specific data that
+              changes.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q6: How do you share state between sibling components?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Lift state up</b> to their common parent. The parent manages
+              the state and passes it down as props to both siblings. If one
+              sibling needs to update it, pass a callback function as a prop.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q7: Can props be objects or arrays?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Yes!</b> Any JavaScript value can be a prop - strings, numbers,
+              booleans, objects, arrays, functions, even JSX elements.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q8: What's the difference between controlled and uncontrolled
+              components?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Controlled:</b> Parent controls the value via props. The
+              component receives value and onChange as props.
+            </p>
+            <p className="text-gray-400">
+              <b>Uncontrolled:</b> Component manages its own state internally.
+              The parent doesn't control the value.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q9: Can you use props to initialize state?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              <b>Yes,</b> but remember: state becomes independent after
+              initialization. If the prop changes later, your state won't
+              automatically update. Use <code>useEffect</code> if you need to
+              sync state with prop changes.
+            </p>
+          </div>
+
+          <div className="p-4 bg-gray-50 dark:bg-zinc-800 rounded-lg border border-gray-200 dark:border-zinc-700">
+            <h3 className="font-bold text-lg mb-2 text-black dark:text-white">
+              Q10: How do you sync state with prop changes?
+            </h3>
+            <p className="text-gray-400 mb-2">
+              Use <code>useEffect</code> to watch for prop changes and update
+              your state accordingly. This is useful when you initialize state
+              from props but want it to stay in sync.
+            </p>
+          </div>
+        </div>
+
+        <CodeBlock
+          language={commonQuestions.language}
+          filename={commonQuestions.filename}
+          highlightLines={commonQuestions.highlightLines}
+          code={commonQuestions.code}
+        />
+
+        <div className="mt-8 p-6 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
+          <h2 className="font-bold text-xl mb-4 text-black dark:text-white">
+            💡 Pro Tip
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300">
+            When in doubt, ask yourself: <b>"Who owns this data?"</b> If the
+            parent component owns it, use props. If the component itself owns
+            it, use state. If multiple components need it, lift the state up to
+            their common parent and pass it down as props.
+          </p>
         </div>
       </div>
     </main>

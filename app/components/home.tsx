@@ -225,13 +225,14 @@ export default function HomeComponent() {
                   >
                     <b>State vs Props in React</b>
                     <p className="text-gray-500 dark:text-gray-400">
-                      Learn when to use state vs props, why choose one over the other, with practical examples.
+                      Learn when to use state vs props, why choose one over the
+                      other, with practical examples.
                     </p>
                   </a>
                 </h4>
                 <p className="flex justify-center items-center text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
-                11/11/2025
-                  </p>
+                  11/11/2025
+                </p>
               </div>
             </div>
           </div>
@@ -245,12 +246,13 @@ export default function HomeComponent() {
                   >
                     <b>React Hooks Explained</b>
                     <p className="text-gray-500 dark:text-gray-400">
-                      A comprehensive guide to React hooks including useState, useEffect, custom hooks, and more.
+                      A comprehensive guide to React hooks including useState,
+                      useEffect, custom hooks, and more.
                     </p>
                   </a>
                 </h4>
                 <p className="flex justify-center items-center text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
-                09/11/2025
+                  09/11/2025
                 </p>
               </div>
             </div>
