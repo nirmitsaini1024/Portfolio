@@ -1,6 +1,6 @@
 # Portfolio
 
-Hi, I'm **Nirmit Saini** - a Full-Stack Developer evolving into a Web3 Developer. I build Full-Stack projects and other cool things.
+Hi, I'm **Nirmit Saini** - a Full-Stack Developer. I build Full-Stack projects and other cool things.
 
 This is my portfolio showcasing my projects, work experience, and technical blog posts.
 
