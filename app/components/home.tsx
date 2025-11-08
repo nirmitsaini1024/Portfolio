@@ -211,90 +211,30 @@ export default function HomeComponent() {
               ></path>
             </svg>
           </Link>
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-            {" "}
-            Upcoming Projects{" "}
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="group mb-4 hover:shadow-lg rounded-xl transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full">
-              <div className="pointer-events-none">
-                <div
-                  className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"
-                  style={{
-                    maskImage:
-                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                  }}
-                ></div>
-                <div
-                  className="absolute inset-0 rounded-xl opacity-0 mix-blend-overlay transition duration-300 group-hover:opacity-100"
-                  style={{
-                    maskImage:
-                      "radial-gradient(300px at 7.08527px 243.082px, white, transparent)",
-                  }}
-                ></div>
-              </div>
-              <div className="relative h-full">
-                <span className="absolute w-[40%] -bottom-px right-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                <span className="absolute w-px -left-px top-[50%] h-[40%] bg-gradient-to-b from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
-                <div className="flex flex-col items-start dark:border-gray-800 rounded p-4 relative">
-                  <div className="my-4">
-                    <img src="/jira.webp" alt="jira clone" loading="lazy" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                      Team collaboration platform
-                    </h4>
-                    <p className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
-                      Made for complex projects or everyday tasks. ⚡ Plan and
-                      organize tasks. From short projects, to large
-                      cross-functional programs.
-                    </p>
-                    <div className="pt-4 flex md:flex-row flex-wrap">
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Reactjs
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Nodejs (Express)
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        MongoDb
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        TailwindCSS
-                      </p>
-                      <p className="leading-5 mb-2 dark:border dark:border-zinc-700 text-gray-700 dark:text-gray-300 dark:bg-transparent rounded-md text-xs italic bg-gray-50 mr-2 px-1">
-                        Google API
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a
-              className="group mb-4 hover:shadow-lg rounded-xl transition-all duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
-              href="#"
-              aria-label="More projects coming soon.."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="pointer-events-none">
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-100/50 to-teal-100/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 dark:from-[#202D2E] dark:to-[#303428]"></div>
-              </div>
-              <div className="relative h-full p-4">
-                <h4 className="text-lg font-bold tracking-tight text-gray-400 dark:text-gray-100">
-                  More projects coming soon..
-                </h4>
-                <p className="leading-7 text-gray-500 dark:text-gray-300">
-                  I get ideas all day 🙄, All of them are updated here as soon
-                  as I start working on them.
-                </p>
-              </div>
-            </a>
-          </div>
           <WorkExperience />
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
             Recent Blogs
           </h3>
+          <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
+            <div className="w-full">
+              <div className="flex flex-col md:flex-row justify-between">
+                <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
+                  <a
+                    href="/blog/react-hooks"
+                    aria-label="React Hooks Explained: Complete Guide"
+                  >
+                    <b>React Hooks Explained</b>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      A comprehensive guide to React hooks including useState, useEffect, custom hooks, and more.
+                    </p>
+                  </a>
+                </h4>
+                <p className="flex justify-center items-center text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+                  20/01/2025
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
             <div className="w-full">
               <div className="flex flex-col md:flex-row justify-between">
