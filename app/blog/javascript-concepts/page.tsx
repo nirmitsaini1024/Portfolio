@@ -1,19 +1,19 @@
 "use client";
 import React from "react";
 import { CodeBlock } from "@/components/ui/code-block";
-import { closures } from "@/components/codeblocks/closures";
-import { promises } from "@/components/codeblocks/promises";
-import { async } from "@/components/codeblocks/asyncawait";
 import {
+  closures,
+  promises,
+  async,
   debouncing,
   eventdelegation,
   eventloop,
   hoisting,
   prototypes,
   Throttling,
+  higherorderfn,
+  trycatch,
 } from "@/components/codeblocks";
-import { higherorderfn } from "@/components/codeblocks/higher-order";
-import { trycatch } from "@/components/codeblocks/try-catch";
 
 
 
