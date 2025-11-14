@@ -220,6 +220,26 @@ export default function HomeComponent() {
               <div className="flex flex-col md:flex-row justify-between">
                 <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
                   <a
+                    href="/blog/promises-in-javascript"
+                    aria-label="Promises in JavaScript: Complete Guide"
+                  >
+                    <b>Promises in JavaScript</b>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      Master Promises from basics to advanced. Learn Promise states, methods, error handling, and patterns.
+                    </p>
+                  </a>
+                </h4>
+                <p className="flex justify-center items-center text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+                  15/11/2025
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200">
+            <div className="w-full">
+              <div className="flex flex-col md:flex-row justify-between">
+                <h4 className="text-base blog-heading md:text-base mb-2 w-full text-gray-900 dark:text-gray-100">
+                  <a
                     href="/blog/state-vs-props"
                     aria-label="State vs Props in React: Complete Guide"
                   >

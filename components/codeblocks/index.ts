@@ -1,26 +1,11 @@
-export { closures } from "./closures";
-export { promises } from "./promises";
-export { async } from "./asyncawait";
-export { eventloop } from "./eventloop";
-export { hoisting } from "./hoisting";
-export { prototypes } from "./prototypes";
-export { eventdelegation } from "./eventdelegation";
-export { debouncing } from "./debouncing";
-export { Throttling } from "./throttling";
-export { useState } from "./usestate";
-export { useEffect } from "./useeffect";
-export { useContext } from "./usecontext";
-export { useReducer } from "./usereducer";
-export { useMemo } from "./usememo";
-export { useCallback } from "./usecallback";
-export { useRef } from "./useref";
-export { customHooks } from "./customhooks";
-export { propsBasics } from "./props-basics";
-export { stateBasics } from "./state-basics";
-export { propsVsState } from "./props-vs-state";
-export { liftingState } from "./lifting-state";
-export { controlledComponents } from "./controlled-components";
-export { whenToUse } from "./when-to-use";
-export { statePropPatterns } from "./state-prop-patterns";
-export { updatingProps } from "./updating-props";
-export { commonQuestions } from "./common-questions";
+// Promises
+export * from "./promises";
+
+// React Hooks
+export * from "./react-hooks";
+
+// State vs Props
+export * from "./state-props";
+
+// JavaScript Concepts
+export * from "./javascript";
