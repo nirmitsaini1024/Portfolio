@@ -9,7 +9,7 @@ export default function ResumePage() {
   useEffect(() => {
     // Redirect to the Google Drive resume
     window.location.href =
-      "https://drive.google.com/file/d/1JIsBCjrMfsiy_6RrY_5sF5JFUo_o0Wn8/view?usp=sharing";
+      "https://drive.google.com/file/d/1HgKGok5pLHx-v300aqL3s2folewq-u7j/view?usp=sharing";
   }, []);
 
   return (

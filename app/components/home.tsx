@@ -63,7 +63,7 @@ export default function HomeComponent() {
               </p>
               <Button className="w-22 ml-1 mt-2" variant="secondary" asChild>
                 <Link
-                  href="https://drive.google.com/file/d/1JIsBCjrMfsiy_6RrY_5sF5JFUo_o0Wn8/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1HgKGok5pLHx-v300aqL3s2folewq-u7j/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Nirmit Saini Resume"
