@@ -1,9 +1,7 @@
 "use client";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { Cover } from "@/components/ui/cover";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { DownloadOutlined } from "@ant-design/icons";
 import projects from "../data/projects.json";
 import WorkExperience from "./work";
@@ -38,12 +36,12 @@ export default function HomeComponent() {
                 </span>
               </div>
               <p className="text-zinc-600 dark:text-zinc-500">
-                Full-Stack Developer evolving into a
+                Jack of all trades,
                 <span className="font-bold cursor-pointer text-zinc-800 dark:text-zinc-200">
                   {" "}
-                  Web3
+                  Trying
                 </span>{" "}
-                Developer.
+                to master some.
                 <br />
                 Find me on{" "}
                 <LinkPreview
@@ -62,7 +60,7 @@ export default function HomeComponent() {
                 for tech updates and memes.
               </p>
               <Button className="w-22 ml-1 mt-2" variant="secondary" asChild>
-                <Link
+                <a
                   href="https://drive.google.com/file/d/1HgKGok5pLHx-v300aqL3s2folewq-u7j/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -76,7 +74,7 @@ export default function HomeComponent() {
                     }}
                   />
                   Resume
-                </Link>
+                </a>
               </Button>
             </div>
 
@@ -88,13 +86,10 @@ export default function HomeComponent() {
                 className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20"
               >
                 <div className="relative h-full w-full">
-                  <Image
+                  <img
                     src="/main-profile.webp"
                     alt="Nirmit Saini Profile"
-                    fill
-                    style={{ objectFit: "cover" }}
-                    className="transition duration-500"
-                    priority
+                    className="h-full w-full object-cover transition duration-500"
                   />
                 </div>
               </a>
@@ -191,7 +186,7 @@ export default function HomeComponent() {
               </div>
             ))}
           </div>
-          <Link
+          <a
             href="/projects"
             className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
           >
@@ -210,7 +205,7 @@ export default function HomeComponent() {
                 d="M19 9l-7 7-7-7"
               ></path>
             </svg>
-          </Link>
+          </a>
           <WorkExperience />
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
             Recent Blogs

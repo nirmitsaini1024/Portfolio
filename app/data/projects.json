@@ -1,5 +1,20 @@
 [
   {
+    "title": "db-rotator",
+    "description": "When free-tier Postgres hits network or storage limits, db-rotator automatically creates a new Neon/Supabase project, migrates data, updates .env URLs, and restarts your app with minimal downtime and no data loss.",
+    "technologies": [
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Neon",
+      "Supabase",
+      "CLI/SDK"
+    ],
+    "githubUrl": "https://github.com/nirmitsaini1024/db-rotator",
+    "liveDemoUrl": "https://db-rotator.10xdevs.in/",
+    "image": "https://raw.githubusercontent.com/nirmitsaini1024/db-rotator/main/landing-page.png"
+  },
+  {
     "title": "Setup Your Blog in Minutes",
     "description": "Blogging platform that empowers users to create, publish, and share their own blogs with a global audience.",
     "technologies": [
