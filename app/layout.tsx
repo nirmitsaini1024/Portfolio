@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -76,6 +77,11 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
         <Analytics />
+        <Script
+          src="/oneko/oneko.js"
+          strategy="afterInteractive"
+          data-cat="/oneko/oneko.gif"
+        />
       </body>
     </html>
   );
